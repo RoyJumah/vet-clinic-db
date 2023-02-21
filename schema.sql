@@ -6,5 +6,6 @@ name VARCHAR(250),
 date_of_birth DATE,
 escape_attempts INT,
 neutered BOOLEAN,
-weight_kg FLOAT
+weight_kg FLOAT,
+species VARCHAR (50)
 );
