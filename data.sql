@@ -12,3 +12,26 @@ VALUES('Angemon','2005-06-12',45,True,1);
 VALUES('Boarmon','2005-06-07',20.4,True,7);
 VALUES('Blossom','1998-10-13',17,True,3);
 VALUES('Ditto','2022-05-14',22,True,4);
+
+INSERT INTO OWNERS(full_name, age)
+VALUES('Sam Smith', 34);
+VALUES('Jeniffer Orwell', 19);
+VALUES('Melody Pond', 77);
+VALUES('Dean Winchester',14);
+VALUES('Jodie Whittaker', 38);
+VALUES('Bob', 45);
+
+INSERT INTO species(name)
+VALUES('Pokemon');
+VALUES('Digimon');
+
+UPDATE animals SET species_id = CASE WHEN name LIKE '%mon' THEN 2 ELSE 1 END;
+UPDATE animals SET owner_id = CASE
+                    WHEN name = 'Agumon' THEN 1 
+                    WHEN name IN ('Gabumon', 'Pikachu') THEN 2 
+                    WHEN name IN ('Devimon', 'Plantmon') THEN 7
+                    WHEN name IN ('Charmander', 'Squirtle', 'Blossom') THEN 3
+                    WHEN name IN ('Angemon', 'Boarmon') THEN 4 
+                 END;
+
+
