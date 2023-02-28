@@ -17,5 +17,31 @@ CREATE TABLE treatments (
   type_name VARCHAR(255) NOT NULL
 );
 
+CREATE TABLE invoice_items (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  unit_price DECIMAL(10, 2) NOT NULL,
+  quantity INT NOT NULL,
+  total_price DECIMAL(10, 2) NOT NULL,
+  invoice_id INT NOT NULL,
+  treatment_id INT NOT NULL,
+  FOREIGN KEY (invoice_id) REFERENCES invoices(id),
+  FOREIGN KEY (treatment_id) REFERENCES treatments(id)
+);
 
+CREATE TABLE invoices (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  total_amount DECIMAL(10, 2) NOT NULL,
+  generated_at TIMESTAMP NOT NULL,
+  payed_at TIMESTAMP,
+  medical_history_id INT NOT NULL UNIQUE,
+  FOREIGN KEY (medical_history_id) REFERENCES medical_histories(id)
+);
+
+CREATE TABLE medical_histories_treatments (
+  medical_history_id INT NOT NULL,
+  treatment_id INT NOT NULL,
+  PRIMARY KEY (medical_history_id, treatment_id),
+  FOREIGN KEY (medical_history_id) REFERENCES medical_histories(id),
+  FOREIGN KEY (treatment_id) REFERENCES treatments(id)
+);
 
