@@ -90,11 +90,9 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 <!-- LIVE DEMO -->
 
-## 🚀 Live Demo <a name="live-demo"></a>
+## 🚀 Live Demo <a name="live-demo"></a> (**NOT AVAILABLE**)
 
-> Add a link to your deployed project.
-
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+- [Live Demo Link](https://yourdeployedapplicationlink.com) 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
