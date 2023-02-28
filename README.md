@@ -1,4 +1,3 @@
-
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
@@ -20,8 +19,7 @@
 
 # vet-clinic
 
->Vet-Clinic is a database designed to store information about animals, including their names, birthdates, weights, neutering status, and number of escape attempts, as well as their owners and visits to the clinic, with features such as filtering by weight range and name search.
-
+> Vet-Clinic is a database designed to store information about animals, including their names, birthdates, weights, neutering status, and number of escape attempts, as well as their owners and visits to the clinic, with features such as filtering by weight range and name search.
 
 ## Getting Started
 
@@ -32,6 +30,7 @@ This repository includes files with plain SQL that can be used to recreate a dat
 - Check [queries.sql](./queries.sql) for examples of queries that can be run on a newly created database. **Important note: this file might include queries that make changes in the database (e.g., remove records). Use them responsibly!**
 
 <a name="readme-top"></a>
+
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
@@ -67,9 +66,7 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 <!-- LIVE DEMO -->
 
-## 🚀 Live Demo <a name="live-demo"></a>
-
-> Add a link to your deployed project.
+## 🚀 Live Demo <a name="live-demo"></a> (**NOT AVAILABLE**)
 
 - [Live Demo Link](https://yourdeployedapplicationlink.com)
 
@@ -92,7 +89,6 @@ In order to run this project you need to have
 - Knowledge of Git and GitHub
 - Have PostgreSQL client
 
-
 <!--
 Example command:
 
@@ -109,6 +105,7 @@ Clone this repository to your desired folder:
   cd my-folder
   git clone https://github.com/RoyJumah/vet-clinic.git
 ```
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
@@ -118,7 +115,7 @@ Clone this repository to your desired folder:
 👤 **Roy Jumah**
 
 - GitHub: [@RoyJumah](https://github.com/RoyJumah)
-- Twitter: [@_royissues](https://twitter.com/_royissues)
+- Twitter: [@\_royissues](https://twitter.com/_royissues)
 - LinkedIn: [Roy Jumah](https://www.linkedin.com/in/roy-jumah/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
