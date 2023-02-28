@@ -53,6 +53,18 @@ id serial primary key,
 
 create index on visits (animals_id);
 
+ CREATE TABLE visits_clustered (
+  id SERIAL PRIMARY KEY,
+  animals_id INTEGER,
+  vet_id INTEGER,
+  visit_date TIMESTAMP
+);
+
+
+CREATE INDEX visits_clustered_vet_id_idx ON visits_clustered (vet_id);
+CLUSTER visits_clustered USING visits_clustered_vet_id_idx;
+DROP TABLE visits;
+ALTER TABLE visits_clustered RENAME TO visits;
 
 
 CREATE INDEX email_idx ON owners (email);
