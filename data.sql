@@ -173,3 +173,7 @@ select a.id, v.id, '2020-05-24'
 from animals a
 join vets v on v.name = 'Stephanie Mendez'
 where a.name = 'Blossom';
+
+INSERT INTO visits_clustered (animals_id, vet_id, visit_date)
+SELECT animals_id, vet_id, visit_date
+FROM visits;
