@@ -19,7 +19,7 @@
 
 # vet-clinic
 
-> Vet-Clinic is a database that is designed to store information about animals, including their names, birthdates, weights, neutering status, and number of escape attempts, as well as their owners and visits to the clinic, with features such as filtering by weight range and name search.
+> Vet-Clinic is a database designed to store information about animals, including their names, birthdates, weights, neutering status, and number of escape attempts, as well as their owners and visits to the clinic, with features such as filtering by weight range and name search.
 
 ## Getting Started
 
